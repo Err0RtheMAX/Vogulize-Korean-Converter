@@ -25,7 +25,7 @@
 > 
 - [Vogulize-Korean-Converter](https://github.com/Err0RtheMAX/Vogulize-Korean-Converter)<br><br>
 
-> **참조한 오픈소스 및 패키지**
+> **참조한 오픈소스, 사이트 및 패키지**
 > 
 - [네이버 Developers Papago API](https://developers.naver.com/docs/papago/README.md)
 - [영어-한글 표기 변환기](https://transliterator.herokuapp.com/)
@@ -37,7 +37,7 @@
 
 - Python 3.XX
 - Jupyter notebook 6.XX
-- konlpy, json, requests, googletrans (pip, conda)<br><br><br><br>
+- konlpy, json, requests, googletrans (pip, conda로 설치)<br><br><br><br>
 
 ## 스크린 샷
 
@@ -148,7 +148,7 @@ Korean_Text = [’당신의’, ‘존재는’, ‘내게’, ‘힘을’, ‘
 
     ```
     ex) 밥을 먹는다.  →  라이스(rice)를 이트(eat)한다.
-    ex) 밥을 먹으니 배가 부르다. → 라이스(rice)를 이트(eat)<b>하</b>니 쉽(ship)이 풀(full)하다.
+    ex) 밥을 먹으니 배가 부르다. → 라이스(rice)를 이트(eat)하니 쉽(ship)이 풀(full)하다.
     ```
     <br><br>
 2. 동사, 형용사 단어를 보그체로 만들기 위해서 Kkma, Hananum 방식을 사용할 때, '가 + -ㅂ니다', '예쁘 + -ㄴ' 와 같이 어간과  어미로 분리가 되는데,  단순히 동사형 어간으로만 영어를 번역하면 다른 의미로 해석이 되는 경우가 있었음. 따라서 정확한 해석을 위해서 '갑니다', '예쁜' 와 같은 형태로 임의적으로 합쳐져서 번역기에 들어가야 함. 그러나 임의적으로 글을 합치는 과정에서 ord를 이용해 글자가 합쳐질 때의 유니코드를 대조해 봤지만 ends_with_jongsung과 같은 규칙화 할 수 있는 패턴을 감지하지 못하였음.<br><br><br><br>
